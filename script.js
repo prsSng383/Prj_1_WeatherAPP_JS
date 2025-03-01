@@ -58,7 +58,10 @@ const fetchapi= async (cityName)=>{
          inputValue.value = "";
         console.log(temperature);
     } catch (error) {
-        console.log(error)
+        console.log(error);
+        alert("Invalid Credentials");
+        inputValue.value = "";
+        document.querySelector(".weather").style.display="none";
         console.log("Invalid city name.")
     }
 
